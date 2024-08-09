@@ -34,7 +34,7 @@ class SegmentTree:
             self.update(2*ind+1,i,l,m,val)
         else:
             self.update(2*ind+2,i,m+1,r,val)
-        self.seg[i]=min(self.seg[2*i+1],self.seg[2*i+2])
+        self.seg[ind]=min(self.seg[2*ind+1],self.seg[2*ind+2])
         
 l1=[1,3,2,0,4,5]
 l2=[]
